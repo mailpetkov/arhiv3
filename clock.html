@@ -1,0 +1,65 @@
+<div class="boxcontent" id="dateCell" align="center" style="color : #3C7191; font-weight : bold; font-size : 14; font-family : courier new;"></div>
+
+			<div class="boxcontent" id="clockCell" align="center" style="color : #3C7191; font-weight : bold; font-size : 26; font-family : courier new;"></div>
+
+			<script type="text/javascript">
+
+			<!--
+
+var dateCell = document.getElementById("dateCell");
+
+var clockCell = document.getElementById("clockCell");
+
+var months = new Array(
+
+	"Януари", "Февруари", "Март", 
+
+	"Април", "Май", "Юни", 
+
+	"Юли", "Август", "Септември", 
+
+	"Октомври", "Ноември", "Декември");
+
+var days = new Array(
+
+	"Неделя", "Понеделник", "Вторник", 
+
+	"Сряда", "Четвъртък", "Петък", 
+
+	"Събота");
+
+function lZero(value)
+{
+	if (value < 10)
+	{
+		return "0" + value;
+	}
+	return value;
+}
+function tick()
+{
+	var date = new Date();
+	
+	dateCell.innerHTML = 
+	
+		days[date.getDay()] + "<br />" + 
+
+		lZero(date.getDate()) + "." + 
+
+		months[date.getMonth()] + "." + 
+
+		date.getFullYear();
+
+	clockCell.innerHTML = 
+
+		lZero(date.getHours()) + ":" + 
+
+		lZero(date.getMinutes()) + ":" + 
+
+		lZero(date.getSeconds());
+
+	setTimeout("tick()", 1000);
+}
+tick();
+			//-->
+			</script>

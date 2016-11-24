@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+ <title>ЦНСТ - Бяла Слатина</title>
+    <meta charset="UTF-8">
+    <!-- Insert to your webpage before the  -->
+    <script src="audioplayerengine/jquery.js"></script>
+    <script src="audioplayerengine/amazingaudioplayer.js"></script>
+    <link rel="stylesheet" type="text/css" href="audioplayerengine/initaudioplayer-1.css">
+    <script src="audioplayerengine/initaudioplayer-1.js"></script>
+    <!-- End of head section HTML codes -->
+<meta http-equiv=“content-type“ content=“text/html; charset=windows-1251″ />
+<style>
+div.container {
+    width: 100%;
+    border: 1px solid gray;
+}
+
+header, footer {
+    padding: 1em;
+    color: white;
+    background-color: blue;
+    clear: left;
+    text-align: center;
+}
+
+nav {
+    float: left;
+    max-width: 160px;
+    margin: 0;
+    padding: 1em;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+   
+nav ul a {
+    text-decoration: none;
+}
+
+article {
+    margin-left: 170px;
+    border-left: 1px solid gray;
+    padding: 1em;
+    overflow: hidden;
+}
+</style>
+</head>
+<body>
+
+<div class="container">
+
+<header>
+   <h1>ЦЕНТЪР ЗА НАСТАНЯВАНЕ ОТ СЕМЕЕН ТИП (ЦНСТ)-Бяла Слатина</h1>
+</header>
+  
+<nav>
+  <ul>
+   <div class="boxcontent" id="dateCell" align="center" style="color : #3C7191; font-weight : bold; font-size : 14; font-family : courier new;"></div>
+
+			<div class="boxcontent" id="clockCell" align="center" style="color : #3C7191; font-weight : bold; font-size : 26; font-family : courier new;"></div>
+
+			<script type="text/javascript">
+
+			<!--
+
+var dateCell = document.getElementById("dateCell");
+
+var clockCell = document.getElementById("clockCell");
+
+var months = new Array(
+
+	"Януари", "Февруари", "Март", 
+
+	"Април", "Май", "Юни", 
+
+	"Юли", "Август", "Септември", 
+
+	"Октомври", "Ноември", "Декември");
+
+var days = new Array(
+
+	"Неделя", "Понеделник", "Вторник", 
+
+	"Сряда", "Четвъртък", "Петък", 
+
+	"Събота");
+
+function lZero(value)
+{
+	if (value < 10)
+	{
+		return "0" + value;
+	}
+	return value;
+}
+function tick()
+{
+	var date = new Date();
+	
+	dateCell.innerHTML = 
+	
+		days[date.getDay()] + "<br />" + 
+
+		lZero(date.getDate()) + "." + 
+
+		months[date.getMonth()] + "." + 
+
+		date.getFullYear();
+
+	clockCell.innerHTML = 
+
+		lZero(date.getHours()) + ":" + 
+
+		lZero(date.getMinutes()) + ":" + 
+
+		lZero(date.getSeconds());
+
+	setTimeout("tick()", 1000);
+}
+tick();
+			//-->
+			</script>
+	<br>
+    <br>
+	    <!-- Insert to your webpage where you want to display the audio player -->
+    <div id="amazingaudioplayer-1" style="display:block;position:relative;width:24px;height:auto;margin:0px auto 0px;">
+        <ul class="amazingaudioplayer-audios" style="display:none;">
+            <li data-artist="リチャード・クレイダーマン" data-title="夢の中のウェディング" data-album="愛の夢～レーヴ・ダムール～" data-info="" data-image="" data-duration="164">
+                <div class="amazingaudioplayer-source" data-src="audios/richard_klajderman_mariage_d_amour_f_shopen_vesennij_val_s (freemp3now.me).mp3" data-type="audio/mpeg" />
+            </li>
+        </ul>
+        <div class="amazingaudioplayer-engine"><a href="http://amazingaudioplayer.com" title="music player for website">html5 audio player</a></div>
+    </div>
+    <!-- End of body section HTML codes -->
+	<br>
+  <br>
+  <br> <br>		
+		<li><a href="index.html">Начало</a></li>
+    <li><a href="za nas.html">За нас</a></li>
+    <li><a href="novini.html">Новини</a></li>
+	<li><a href="galeria.html">Галерия</a></li>
+    <li><a href="blagod.html">Благодарности</a></li>
+  </ul>
+</nav>
+
+<article>
+  <h1>Новини</h1>
+  <p></p>
+  <p></p>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+    <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+</article>
+
+<footer>cnst-bs-bg.com</footer>
+
+</div>
+
+</body>
+</html>
